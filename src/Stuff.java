@@ -13,7 +13,7 @@ public class Stuff {
 		result.setLocationRelativeTo(null);
 		result.setResizable(false);
 		
-		ImageIcon test = new ImageIcon("img\\Blue.png"); ;
+		ImageIcon test = new ImageIcon("img\\Blue.png");
 		
 		JLabel picLabel = new JLabel(test);
 		picLabel.setLocation(0, 0);
