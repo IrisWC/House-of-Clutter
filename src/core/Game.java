@@ -61,16 +61,30 @@ public class Game extends JPanel implements MouseListener {
 	public void mouseClicked(MouseEvent e) {
 		int width = getWidth();
 		int height = getHeight();
+//		
+//		System.out.println(width + " x " + height);
 		
-		//System.out.println(width + " x " + height);
+//		int x = e.getX();
+//		int y = e.getY();
+//		
+//		System.out.println(x + ", " + y);
+//		
+//		Point mouse = getMousePosition();
+//		System.out.println(mouse.getX() + ", " + mouse.getY());
 		
-		int x = e.getX();
-		int y = e.getY();
+//		int x = (int)(e.getX() * WIDTH / width);
+//		int y = (int)(e.getY() * HEIGHT/height);
+//		
+//		System.out.println(x + ", " + y);
 		
-		//System.out.println(x + ", " + y);
+		Point mouse = getMousePosition();
+		int xmouse = (int)(mouse.getX() * WIDTH / width);
+		int ymouse = (int)(mouse.getY() * HEIGHT/height);
+		
+		//System.out.println(xmouse + ", " + ymouse);
 		
 		for(Furniture f : furniture) {
-			if(f.contains(x, y))
+			if(f.contains(xmouse, ymouse))
 				f.remove();
 		}
 		
