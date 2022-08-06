@@ -47,7 +47,7 @@ public class Game extends JPanel implements MouseListener {
 	    g2.scale(ratioX,ratioY);
 	    
 	    for(Furniture f : furniture) {
-	    	furniture.draw(g, this);
+	    	f.draw(g, this);
 	    }
 	    
 	    g2.setTransform(at);
