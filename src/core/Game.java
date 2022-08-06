@@ -48,7 +48,7 @@ public class Game extends JPanel implements MouseListener {
 	    AffineTransform at = g2.getTransform();
 	    g2.scale(ratioX,ratioY);
 	    
-	    g.drawImage(new ImageIcon("img/Background.png").getImage(), 0, 0, 1600, 900, this);
+	    g.drawImage(new ImageIcon("img/backgroundTB.png").getImage(), 0, 0, 1600, 900, this);
 	    
 	    for(Furniture f : furniture) {
 	    	f.draw(g, this);
@@ -88,6 +88,17 @@ public class Game extends JPanel implements MouseListener {
 	}
 	
 	private void addFurniture() {
-		furniture.add(new Furniture("Bed.png", 500, 500, 100, 100));
+		//end 1300
+		//top line of furniture
+		furniture.add(new Furniture("Bedside.png", 5, 160, 139, 139));
+		furniture.add(new Furniture("Bed.png", 131, 160, 250, 250));
+		furniture.add(new Furniture("Dresser.png", 300, 120, 139, 214));
+		furniture.add(new Furniture("Dresser 3.png", 350, 110, 250, 310));
+		furniture.add(new Furniture("Block.png", 500, 200, 83, 92));
+		furniture.add(new Furniture("Bookshelf.png", 600, 500, 500, 600));
+		furniture.add(new Furniture("Pottery Shelf.png", 750, 450, 250, 450));
+		furniture.add(new Furniture("Cabinet.png", 800, 500, 320, 250));
+		furniture.add(new Furniture("Vanity.png", 1000, 500, 250, 350));
+		furniture.add(new Furniture("Table.png", 1200, 500, 380, 250));
 	}
 }
