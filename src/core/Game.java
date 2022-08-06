@@ -177,7 +177,7 @@ public class Game extends JPanel implements MouseListener {
 		furniture.add(new Furniture("Vase 3", 18, 212, 28, 44));
 		furniture.add(new Furniture("Lamp", 50, 195, 45, 63));
 		//bed + rug + stuff
-		furniture.add(new Furniture("Rug", 17, 365, 393, 250));
+		furniture.add(new Furniture("Rug", 8, 360, 393, 273));
 		furniture.add(new Furniture("Bed", 92, 216, 228, 228));
 		furniture.add(new Furniture("CushionOR", 150, 340, 47, 40));
 //		furniture.add(new Furniture("Horse.png", 92, 216, 228, 228));
@@ -192,9 +192,13 @@ public class Game extends JPanel implements MouseListener {
 		furniture.add(new Furniture("Dresser 3", 430, 120, 179, 221));
 		//block + cushions
 		furniture.add(new Furniture("Block", 607, 260, 64, 70));
-		//shelf + 
+		//shelf + rug + furniture
+		furniture.add(new Furniture("Rug 3", 640, 330, 295, 227));
 		furniture.add(new Furniture("Bookshelf", 670, 75, 227, 272));
-		//shelf + 
+		
+		//books
+//		furniture.add(new Furniture("Bookshelf", 670, 75, 227, 272));
+		//shelf + stuff
 		furniture.add(new Furniture("Pottery Shelf", 895, 162, 100, 180));
 		//cabinet + stuff
 		furniture.add(new Furniture("Cabinet", 994, 250, 114, 89));
