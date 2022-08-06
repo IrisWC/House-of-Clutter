@@ -99,7 +99,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 		
 		if(SwingUtilities.isRightMouseButton(e)) {
 		for(int i = furniture.size() - 1; i >= 0; i--) {
-			if(furniture.get(i).contains(xmouse, ymouse)) {
+			if(!furniture.get(i).checkRemoved() && furniture.get(i).contains(xmouse, ymouse)) {
 				furniture.get(i).remove();
 				break;
 			}
@@ -119,7 +119,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 		int ymouse = (int)(mouse.getY() * HEIGHT/height);
 		
 		for(int i = furniture.size() - 1; i >= 0; i--) {
-			if(furniture.get(i).contains(xmouse, ymouse)) {
+			if(!furniture.get(i).checkRemoved() && furniture.get(i).contains(xmouse, ymouse)) {
 				holding = furniture.get(i);
 				break;
 			}
@@ -157,7 +157,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 	}
 	
 	public void mouseDragged(MouseEvent e) {
-		if(holding != null) {
+		if(holding != null && SwingUtilities.isLeftMouseButton(e)) {
 			int width = getWidth();
 			int height = getHeight();
 			
