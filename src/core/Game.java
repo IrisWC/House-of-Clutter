@@ -158,10 +158,13 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 			int height = getHeight();
 			
 			Point mouse = getMousePosition();
-			int xmouse = (int)(mouse.getX() * WIDTH / width);
-			int ymouse = (int)(mouse.getY() * HEIGHT/height);
 			
-			holding.moveWith(xmouse, ymouse);
+			if(mouse != null) {
+				int xmouse = (int) (mouse.getX() * WIDTH / width);
+				int ymouse = (int) (mouse.getY() * HEIGHT / height);
+
+				holding.moveWith(xmouse, ymouse);
+			}
 		}
 		
 		//System.out.println("mouse was dragged");
