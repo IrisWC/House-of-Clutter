@@ -88,12 +88,12 @@ public class Game extends JPanel implements MouseListener {
 	}
 	
 	private void addFurniture() {
-		//end 1300
+		//end 1300 pixels
 		//top line of furniture
-		furniture.add(new Furniture("Bedside.png", 5, 160, 139, 139));
-		furniture.add(new Furniture("Bed.png", 131, 160, 250, 250));
-		furniture.add(new Furniture("Dresser.png", 300, 120, 139, 214));
-		furniture.add(new Furniture("Dresser 3.png", 350, 110, 250, 310));
+		furniture.add(new Furniture("Bedside.png", 5, 210, 125, 125));
+		furniture.add(new Furniture("Bed.png", 122, 216, 246, 246));
+		furniture.add(new Furniture("Dresser.png", 320, 115, 167, 257));
+		furniture.add(new Furniture("Dresser 3.png", 550, 110, 250, 310));
 		furniture.add(new Furniture("Block.png", 500, 200, 83, 92));
 		furniture.add(new Furniture("Bookshelf.png", 600, 500, 500, 600));
 		furniture.add(new Furniture("Pottery Shelf.png", 750, 450, 250, 450));
