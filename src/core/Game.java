@@ -89,16 +89,38 @@ public class Game extends JPanel implements MouseListener {
 	
 	private void addFurniture() {
 		//end 1300 pixels
-		//top line of furniture
+		//wall
+//		furniture.add(new Furniture("Picture 3.png", 3, 10, 95, 95));
+//		furniture.add(new Furniture("Picture 5.png", 18, 20, 28, 44));
+		//bedside + stuff
 		furniture.add(new Furniture("Bedside.png", 3, 235, 95, 95));
+		furniture.add(new Furniture("Vase 3.png", 18, 212, 28, 44));
+		furniture.add(new Furniture("Lamp.png", 50, 195, 45, 63));
+		//bed + rug + stuff
+		furniture.add(new Furniture("Rug.png", 17, 365, 393, 250));
 		furniture.add(new Furniture("Bed.png", 92, 216, 228, 228));
+		furniture.add(new Furniture("CushionOR.png", 150, 340, 47, 40));
+//		furniture.add(new Furniture("Horse.png", 92, 216, 228, 228));
+//		furniture.add(new Furniture("CushionO.png", 92, 216, 228, 228));
+//		furniture.add(new Furniture("CushionR.png", 92, 216, 228, 228));
+//		furniture.add(new Furniture("CUshionY.png", 92, 216, 228, 228));
+//		furniture.add(new Furniture("Bed.png", 92, 216, 228, 228));
+//		furniture.add(new Furniture("Bed.png", 92, 216, 228, 228));
+//		furniture.add(new Furniture("Bed.png", 92, 216, 228, 228));
+		//dresser + cushion
 		furniture.add(new Furniture("Dresser.png", 314, 160, 119, 180));
 		furniture.add(new Furniture("Dresser 3.png", 430, 120, 179, 221));
+		//block + cushions
 		furniture.add(new Furniture("Block.png", 607, 260, 64, 70));
+		//shelf + 
 		furniture.add(new Furniture("Bookshelf.png", 670, 75, 227, 272));
+		//shelf + 
 		furniture.add(new Furniture("Pottery Shelf.png", 895, 162, 100, 180));
+		//cabinet + stuff
 		furniture.add(new Furniture("Cabinet.png", 994, 250, 114, 89));
+		//vanity + blue thing
 		furniture.add(new Furniture("Vanity.png", 1108, 190, 100, 140));
+		//table + flower
 		furniture.add(new Furniture("Table.png", 1208, 250, 89, 83));
 	}
 }
