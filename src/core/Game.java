@@ -59,8 +59,15 @@ public class Game extends JPanel implements MouseListener {
 
 	@Override
 	public void mouseClicked(MouseEvent e) {
+		int width = getWidth();
+		int height = getHeight();
+		
+		//System.out.println(width + " x " + height);
+		
 		int x = e.getX();
 		int y = e.getY();
+		
+		//System.out.println(x + ", " + y);
 		
 		for(Furniture f : furniture) {
 			if(f.contains(x, y))
@@ -77,7 +84,7 @@ public class Game extends JPanel implements MouseListener {
 
 	@Override
 	public void mouseReleased(MouseEvent e) {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
