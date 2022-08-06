@@ -179,15 +179,31 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 		//rug
 		furniture.add(new Furniture("Rug", 8, 360, 393, 273));
 		furniture.add(new Furniture("Rug 3", 640, 330, 295, 227));
-		//wall
-		furniture.add(new Furniture("Picture 3", 3, 10, 63, 85));
-		furniture.add(new Furniture("Picture 5", 18, 20, 28, 44));
-		//bedside + stuff
+		//furniture
+		furniture.add(new Furniture("Bookshelf", 670, 75, 227, 272));
+		furniture.add(new Furniture("Bed", 92, 216, 228, 228));
+		furniture.add(new Furniture("Dresser 3", 430, 120, 179, 221));
+		furniture.add(new Furniture("Dresser", 314, 160, 119, 180));
 		furniture.add(new Furniture("Bedside", 3, 235, 95, 95));
+		furniture.add(new Furniture("Block", 607, 260, 64, 70));
+		furniture.add(new Furniture("Pottery Shelf", 895, 162, 100, 180));
+		furniture.add(new Furniture("Vanity", 1108, 190, 100, 140));
+		furniture.add(new Furniture("Cabinet", 994, 250, 114, 89));
+		furniture.add(new Furniture("Table", 1208, 250, 89, 83));
+		//wall
+		furniture.add(new Furniture("Window", 134, 41, 144, 139));
+		furniture.add(new Furniture("Picture 3", 19, 22, 45, 62));
+		furniture.add(new Furniture("Picture 5", 56, 101, 50, 67));
+		furniture.add(new Furniture("Clock", 349, 59, 50, 50));
+		furniture.add(new Furniture("Picture 3", 294, 112, 36, 48));
+		furniture.add(new Furniture("Picture 4", 424, 5, 52, 70));
+		furniture.add(new Furniture("Picture 5", 500, 55, 42, 56));
+		furniture.add(new Furniture("Picture", 529, 8, 63, 42));
+		furniture.add(new Furniture("Picture 2", 605, 49, 50, 69));
+		//bedside stuff
 		furniture.add(new Furniture("Vase 3", 18, 212, 28, 44));
 		furniture.add(new Furniture("Lamp", 50, 195, 45, 63));
-		//bed + stuff
-		furniture.add(new Furniture("Bed", 92, 216, 228, 228));
+		//bed stuff
 		furniture.add(new Furniture("CushionOR", 150, 340, 47, 40));
 		furniture.add(new Furniture("HorseR", 40, 400, 91, 79));
 //		furniture.add(new Furniture("CushionO.png", 92, 216, 228, 228));
@@ -196,24 +212,20 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 //		furniture.add(new Furniture("Bed.png", 92, 216, 228, 228));
 //		furniture.add(new Furniture("Bed.png", 92, 216, 228, 228));
 //		furniture.add(new Furniture("Bed.png", 92, 216, 228, 228));
-		//dresser + cushion
-		furniture.add(new Furniture("Dresser", 314, 160, 119, 180));
-		furniture.add(new Furniture("Dresser 3", 430, 120, 179, 221));
-		//block + cushions
-		furniture.add(new Furniture("Block", 607, 260, 64, 70));
-		//shelf + furniture
-		furniture.add(new Furniture("Bookshelf", 670, 75, 227, 272));
+		//dresser stuff
+		
+		//block cushions
 		
 		//books
 //		furniture.add(new Furniture("Bookshelf", 670, 75, 227, 272));
-		//shelf + stuff
-		furniture.add(new Furniture("Pottery Shelf", 895, 162, 100, 180));
-		//cabinet + stuff
-		furniture.add(new Furniture("Cabinet", 994, 250, 114, 89));
-		//vanity + blue thing
-		furniture.add(new Furniture("Vanity", 1108, 190, 100, 140));
-		//table + flower
-		furniture.add(new Furniture("Table", 1208, 250, 89, 83));
+		//pottery stuff
+		
+		//cabinet stuff
+		
+		//vanity stuff
+		
+		//table stuff
+		
 	}
 	
 	private boolean checkCompletion() {
