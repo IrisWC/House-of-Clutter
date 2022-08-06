@@ -19,6 +19,7 @@ public class Game extends JPanel implements MouseListener {
 		super();
 		
 		furniture = new ArrayList<Furniture>();
+		addFurniture();
 	}
 	
 	public void run() {
@@ -81,5 +82,9 @@ public class Game extends JPanel implements MouseListener {
 	public void mouseExited(MouseEvent e) {
 		// TODO Auto-generated method stub
 		
+	}
+	
+	private void addFurniture() {
+		furniture.add(new Furniture("Bed.png", 500, 500, 100, 100));
 	}
 }

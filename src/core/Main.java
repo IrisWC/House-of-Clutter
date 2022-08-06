@@ -18,7 +18,13 @@ public class Main {
 	    window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	    window.setExtendedState(JFrame.MAXIMIZED_BOTH); 
 	    
+	    Game game = new Game();
+	    
+	    window.addMouseListener(game);
+	    window.add(game);
 	    window.setVisible(true);
+	    
+	    game.run();
 	}
 	
 	

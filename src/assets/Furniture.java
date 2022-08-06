@@ -13,7 +13,7 @@ public class Furniture {
 	private boolean removed;
 	
 	public Furniture(String image, int xcord, int ycord, int w, int h) {
-		img = new ImageIcon(image).getImage();
+		img = new ImageIcon("img/" + image).getImage();
 		x = xcord;
 		y = ycord;
 		width = w;
