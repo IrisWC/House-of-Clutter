@@ -5,6 +5,7 @@ import java.awt.event.*;
 import java.awt.geom.AffineTransform;
 import java.util.ArrayList;
 
+import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import assets.*;
 
@@ -46,6 +47,8 @@ public class Game extends JPanel implements MouseListener {
 	    Graphics2D g2 = (Graphics2D)g;
 	    AffineTransform at = g2.getTransform();
 	    g2.scale(ratioX,ratioY);
+	    
+	    g.drawImage(new ImageIcon("img/Background.png").getImage(), 0, 0, 1600, 900, this);
 	    
 	    for(Furniture f : furniture) {
 	    	f.draw(g, this);
