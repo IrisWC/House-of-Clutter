@@ -5,9 +5,9 @@ import java.awt.event.*;
 import javax.swing.JPanel;
 
 public class Game extends JPanel implements MouseListener {
-
+	
 	public static final int WIDTH = 1600;
-	 public static final int HEIGHT = 900;
+	public static final int HEIGHT = 900;
 	
 	public Game() {
 		
