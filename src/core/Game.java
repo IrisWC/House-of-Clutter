@@ -15,12 +15,21 @@ public class Game extends JPanel implements MouseListener {
 	public static final int HEIGHT = 900;
 	
 	private ArrayList<Furniture> furniture;
+	private boolean atStart, inGame, atEnd;
+	private String currentPage;
+	private Rectangle startBtn, despBtn, infoBtn, controlBtn, taskBtn, trashBtn, finishBtn;
 	
 	public Game() {
 		super();
 		
 		furniture = new ArrayList<Furniture>();
 		addFurniture();
+		
+		atStart = true; 
+		inGame = false;
+		atEnd = false;
+		
+		currentPage = "backgroundTB.png"; //FIX this for start of game later
 	}
 	
 	public void run() {
@@ -48,7 +57,7 @@ public class Game extends JPanel implements MouseListener {
 	    AffineTransform at = g2.getTransform();
 	    g2.scale(ratioX,ratioY);
 	    
-	    g.drawImage(new ImageIcon("img/backgroundTB.png").getImage(), 0, 0, 1600, 900, this);
+	    g.drawImage(new ImageIcon("img/" + currentPage).getImage(), 0, 0, 1600, 900, this);
 	    
 	    for(Furniture f : furniture) {
 	    	f.draw(g, this);
@@ -154,4 +163,5 @@ public class Game extends JPanel implements MouseListener {
 		//table + flower
 		furniture.add(new Furniture("Table.png", 1208, 250, 89, 83));
 	}
+	
 }
