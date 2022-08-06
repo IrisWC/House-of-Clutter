@@ -39,10 +39,8 @@ public class Furniture {
 	}
 	
 	public void moveWith(int xcord, int ycord) {
-		x = xcord + (width / 2);
-		y = ycord + (height / 2);
-		
-		System.out.println("dragging");
+		x = xcord - (width / 2);
+		y = ycord - (height / 2);
 	}
 	
 	public boolean contains(int xcord, int ycord) {

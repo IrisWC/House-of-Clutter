@@ -21,6 +21,7 @@ public class Main {
 	    Game game = new Game();
 	    
 	    window.addMouseListener(game);
+	    window.addMouseMotionListener(game);
 	    window.add(game);
 	    window.setVisible(true);
 	    

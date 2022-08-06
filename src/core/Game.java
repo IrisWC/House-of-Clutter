@@ -9,7 +9,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import assets.*;
 
-public class Game extends JPanel implements MouseListener {
+public class Game extends JPanel implements MouseListener, MouseMotionListener {
 	
 	public static final int WIDTH = 1600;
 	public static final int HEIGHT = 900;
@@ -210,5 +210,11 @@ public class Game extends JPanel implements MouseListener {
 	
 	private boolean checkCompletion() {
 		return false;
+	}
+
+	@Override
+	public void mouseMoved(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
 	}
 }
