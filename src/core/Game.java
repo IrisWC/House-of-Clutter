@@ -180,7 +180,7 @@ public class Game extends JPanel implements MouseListener {
 		furniture.add(new Furniture("Rug", 8, 360, 393, 273));
 		furniture.add(new Furniture("Bed", 92, 216, 228, 228));
 		furniture.add(new Furniture("CushionOR", 150, 340, 47, 40));
-		furniture.add(new Furniture("HorseR", 60, 400, 318, 276));
+		furniture.add(new Furniture("HorseR", 40, 400, 91, 79));
 //		furniture.add(new Furniture("CushionO.png", 92, 216, 228, 228));
 //		furniture.add(new Furniture("CushionR.png", 92, 216, 228, 228));
 //		furniture.add(new Furniture("CUshionY.png", 92, 216, 228, 228));
