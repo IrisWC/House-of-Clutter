@@ -59,7 +59,13 @@ public class Game extends JPanel implements MouseListener {
 
 	@Override
 	public void mouseClicked(MouseEvent e) {
-		// TODO Auto-generated method stub
+		int x = e.getX();
+		int y = e.getY();
+		
+		for(Furniture f : furniture) {
+			if(f.contains(x, y))
+				f.remove();
+		}
 		
 	}
 
@@ -85,6 +91,10 @@ public class Game extends JPanel implements MouseListener {
 	public void mouseExited(MouseEvent e) {
 		// TODO Auto-generated method stub
 		
+	}
+	
+	public void mouseDragged(MouseEvent e) {
+		    
 	}
 	
 	private void addFurniture() {
