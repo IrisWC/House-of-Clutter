@@ -41,6 +41,7 @@ public class Furniture {
 	public void moveWith(int xcord, int ycord) {
 		x = xcord - (width / 2);
 		y = ycord - (height / 2);
+		hitbox = new Rectangle(x, y, width, height);
 	}
 	
 	public boolean contains(int xcord, int ycord) {

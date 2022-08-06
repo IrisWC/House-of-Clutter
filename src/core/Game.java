@@ -7,6 +7,8 @@ import java.util.ArrayList;
 
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
+import javax.swing.SwingUtilities;
+
 import assets.*;
 
 public class Game extends JPanel implements MouseListener, MouseMotionListener {
@@ -95,11 +97,13 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 		
 		System.out.println(xmouse + ", " + ymouse);
 		
+		if(SwingUtilities.isRightMouseButton(e)) {
 		for(int i = furniture.size() - 1; i >= 0; i--) {
 			if(furniture.get(i).contains(xmouse, ymouse)) {
 				furniture.get(i).remove();
 				break;
 			}
+		}
 		}
 		
 		//System.out.println("mouse was clicked");
