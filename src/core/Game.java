@@ -127,7 +127,16 @@ public class Game extends JPanel implements MouseListener {
 	}
 	
 	public void mouseDragged(MouseEvent e) {
-		    
+		if(holding != null) {
+			int width = getWidth();
+			int height = getHeight();
+			
+			Point mouse = getMousePosition();
+			int xmouse = (int)(mouse.getX() * WIDTH / width);
+			int ymouse = (int)(mouse.getY() * HEIGHT/height);
+			
+			holding.moveWith(xmouse, ymouse);
+		}
 	}
 	
 	private void addFurniture() {
