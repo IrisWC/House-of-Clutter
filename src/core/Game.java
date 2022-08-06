@@ -95,22 +95,36 @@ public class Game extends JPanel implements MouseListener {
 		
 		//System.out.println(xmouse + ", " + ymouse);
 		
-		for(Furniture f : furniture) {
-			if(f.contains(xmouse, ymouse))
-				f.remove();
+		for(int i = furniture.size() - 1; i >= 0; i--) {
+			if(furniture.get(i).contains(xmouse, ymouse)) {
+				furniture.get(i).remove();
+				break;
+			}
 		}
 		
 	}
 
 	@Override
 	public void mousePressed(MouseEvent e) {
-		// TODO Auto-generated method stub
+//		int width = getWidth();
+//		int height = getHeight();
+//		
+//		Point mouse = getMousePosition();
+//		int xmouse = (int)(mouse.getX() * WIDTH / width);
+//		int ymouse = (int)(mouse.getY() * HEIGHT/height);
+//		
+//		for(int i = furniture.size() - 1; i >= 0; i--) {
+//			if(furniture.get(i).contains(xmouse, ymouse)) {
+//				holding = furniture.get(i);
+//				break;
+//			}
+//		}
 		
 	}
 
 	@Override
 	public void mouseReleased(MouseEvent e) {
-		
+		//holding = null;
 		
 	}
 
@@ -127,16 +141,16 @@ public class Game extends JPanel implements MouseListener {
 	}
 	
 	public void mouseDragged(MouseEvent e) {
-		if(holding != null) {
-			int width = getWidth();
-			int height = getHeight();
-			
-			Point mouse = getMousePosition();
-			int xmouse = (int)(mouse.getX() * WIDTH / width);
-			int ymouse = (int)(mouse.getY() * HEIGHT/height);
-			
-			holding.moveWith(xmouse, ymouse);
-		}
+//		if(holding != null) {
+//			int width = getWidth();
+//			int height = getHeight();
+//			
+//			Point mouse = getMousePosition();
+//			int xmouse = (int)(mouse.getX() * WIDTH / width);
+//			int ymouse = (int)(mouse.getY() * HEIGHT/height);
+//			
+//			holding.moveWith(xmouse, ymouse);
+//		}
 	}
 	
 	private void addFurniture() {

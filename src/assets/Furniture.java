@@ -36,6 +36,11 @@ public class Furniture {
 		removed = true;
 	}
 	
+	public void moveWith(int xcord, int ycord) {
+		x = xcord + (width / 2);
+		y = ycord + (height / 2);
+	}
+	
 	public boolean contains(int xcord, int ycord) {
 		if(hitbox.contains(xcord, ycord))
 			return true;
