@@ -18,6 +18,7 @@ public class Game extends JPanel implements MouseListener {
 	private boolean atStart, inGame, atEnd;
 	private String currentPage;
 	private Rectangle startBtn, despBtn, infoBtn, controlBtn, taskBtn, trashBtn, finishBtn;
+	private Furniture holding;
 	
 	public Game() {
 		super();
@@ -30,6 +31,8 @@ public class Game extends JPanel implements MouseListener {
 		atEnd = false;
 		
 		currentPage = "backgroundTB.png"; //FIX this for start of game later
+		
+		holding = null;
 	}
 	
 	public void run() {
@@ -70,7 +73,7 @@ public class Game extends JPanel implements MouseListener {
 	public void mouseClicked(MouseEvent e) {
 		int width = getWidth();
 		int height = getHeight();
-//		
+		
 //		System.out.println(width + " x " + height);
 		
 //		int x = e.getX();
@@ -164,4 +167,7 @@ public class Game extends JPanel implements MouseListener {
 		furniture.add(new Furniture("Table.png", 1208, 250, 89, 83));
 	}
 	
+	private boolean checkCompletion() {
+		return false;
+	}
 }
