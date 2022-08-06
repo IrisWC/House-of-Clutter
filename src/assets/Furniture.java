@@ -13,9 +13,11 @@ public class Furniture {
 	private Image img;
 	private boolean removed;
 	private Rectangle hitbox;
+	private String name;
 	
-	public Furniture(String image, int xcord, int ycord, int w, int h) {
-		img = new ImageIcon("img/" + image).getImage();
+	public Furniture(String name, int xcord, int ycord, int w, int h) {
+		img = new ImageIcon("img/" + name + ".png").getImage();
+		this.name = name;
 		x = xcord;
 		y = ycord;
 		width = w;
@@ -39,6 +41,8 @@ public class Furniture {
 	public void moveWith(int xcord, int ycord) {
 		x = xcord + (width / 2);
 		y = ycord + (height / 2);
+		
+		System.out.println("dragging");
 	}
 	
 	public boolean contains(int xcord, int ycord) {
@@ -50,5 +54,9 @@ public class Furniture {
 	public void draw(Graphics g, ImageObserver io) {
 		if (!removed)
 			g.drawImage(img, x, y, width, height, io);
+	}
+	
+	public String getName() {
+		return name;
 	}
 }
