@@ -93,7 +93,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 		int xmouse = (int)(mouse.getX() * WIDTH / width);
 		int ymouse = (int)(mouse.getY() * HEIGHT/height);
 		
-		//System.out.println(xmouse + ", " + ymouse);
+		System.out.println(xmouse + ", " + ymouse);
 		
 		for(int i = furniture.size() - 1; i >= 0; i--) {
 			if(furniture.get(i).contains(xmouse, ymouse)) {
