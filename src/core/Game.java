@@ -176,15 +176,17 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 	
 	private void addFurniture() {
 		//end 1300 pixels
+		//rug
+		furniture.add(new Furniture("Rug", 8, 360, 393, 273));
+		furniture.add(new Furniture("Rug 3", 640, 330, 295, 227));
 		//wall
-//		furniture.add(new Furniture("Picture 3.png", 3, 10, 95, 95));
-//		furniture.add(new Furniture("Picture 5.png", 18, 20, 28, 44));
+		furniture.add(new Furniture("Picture 3", 3, 10, 63, 85));
+		furniture.add(new Furniture("Picture 5", 18, 20, 28, 44));
 		//bedside + stuff
 		furniture.add(new Furniture("Bedside", 3, 235, 95, 95));
 		furniture.add(new Furniture("Vase 3", 18, 212, 28, 44));
 		furniture.add(new Furniture("Lamp", 50, 195, 45, 63));
-		//bed + rug + stuff
-		furniture.add(new Furniture("Rug", 8, 360, 393, 273));
+		//bed + stuff
 		furniture.add(new Furniture("Bed", 92, 216, 228, 228));
 		furniture.add(new Furniture("CushionOR", 150, 340, 47, 40));
 		furniture.add(new Furniture("HorseR", 40, 400, 91, 79));
@@ -199,8 +201,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 		furniture.add(new Furniture("Dresser 3", 430, 120, 179, 221));
 		//block + cushions
 		furniture.add(new Furniture("Block", 607, 260, 64, 70));
-		//shelf + rug + furniture
-		furniture.add(new Furniture("Rug 3", 640, 330, 295, 227));
+		//shelf + furniture
 		furniture.add(new Furniture("Bookshelf", 670, 75, 227, 272));
 		
 		//books
