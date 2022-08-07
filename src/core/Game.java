@@ -34,7 +34,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 		atStart = false; 
 		inGame = true;
 		
-		currentPage = "backgroundTB.png"; //FIX this for start of game later
+		currentPage = "Menu.png"; 
 		
 		startBtn = new Rectangle(550, 479, 500, 125);
 		infoBtn = new Rectangle(150, 685, 400, 125);
@@ -137,7 +137,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 					currentPage = "Controls.png";
 				}
 				else if(startBtn.contains(xmouse, ymouse)) {
-					currentPage = "backgroundTB.png";
+					currentPage = "background.png";
 					atStart = false;
 					inGame = true;
 				}
