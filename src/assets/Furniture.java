@@ -40,9 +40,14 @@ public class Furniture {
 	}
 	
 	public void moveWith(int xcord, int ycord) {
-		x = xcord - (width / 2);
-		y = ycord - (height / 2);
-		hitbox = new Rectangle(x, y, width, height);
+		int tempx = xcord - (width / 2);
+		int tempy = ycord - (height / 2);
+		
+		if(tempx >= 0 && tempy >= 0 && (tempx + width) < 1300 && (tempy + height) < 901) {
+			x = xcord - (width / 2);
+			y = ycord - (height / 2);
+			hitbox = new Rectangle(x, y, width, height);
+		}
 	}
 	
 	public boolean contains(int xcord, int ycord) {
