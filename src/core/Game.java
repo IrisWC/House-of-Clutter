@@ -19,7 +19,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 	private ArrayList<Furniture> furniture;
 	private boolean atStart, inGame, atEnd;
 	private String currentPage;
-	private Rectangle startBtn, credBtn, infoBtn, controlBtn, backBtn, undoBtn, submitBtn;
+	private Rectangle startBtn, credBtn, infoBtn, ctrlBtn, backBtn, undoBtn, submitBtn;
 	private Furniture holding;
 	
 	public Game() {
@@ -33,6 +33,17 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 		atEnd = false;
 		
 		currentPage = "backgroundTB.png"; //FIX this for start of game later
+		
+		startBtn = new Rectangle(550, 479, 500, 125);
+		infoBtn = new Rectangle(150, 685, 400, 125);
+		credBtn = new Rectangle(600, 685, 400, 125);
+		ctrlBtn = new Rectangle(1050, 685, 400, 125);
+		
+		backBtn = new Rectangle(90, 65, 75, 50);
+		
+		undoBtn = new Rectangle(1329, 755, 241, 50);
+		submitBtn = new Rectangle(1329, 820, 241, 50);
+		
 		
 		holding = null;
 	}
