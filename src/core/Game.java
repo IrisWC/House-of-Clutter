@@ -31,8 +31,8 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 		addFurniture();
 		trash = new ArrayList<Integer>();
 		
-		atStart = false; 
-		inGame = true;
+		atStart = true; 
+		inGame = false;
 		
 		currentPage = "Menu.png"; 
 		
@@ -81,7 +81,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 			for (Furniture f : furniture) {
 				f.draw(g, this);
 			}
-			//g.drawImage(new ImageIcon("img/").getImage(), 1299, 0, 301, 900, this); //TODO
+			g.drawImage(new ImageIcon("img/Taskbar.png").getImage(), 1299, 0, 301, 900, this);
 	    }
 	    
 	    g2.setTransform(at);
