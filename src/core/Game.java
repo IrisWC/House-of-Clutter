@@ -29,7 +29,6 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 		
 		furniture = new ArrayList<Furniture>();
 		addFurniture();
-		System.out.println(furniture.size());
 		trash = new ArrayList<Integer>();
 		
 		atStart = false; 
