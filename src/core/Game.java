@@ -325,9 +325,33 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 		furniture.add(new Furniture("Books 2", 623, 361, 42, 67));
 			//barrel book
 		furniture.add(new Furniture("Books 2", 23, 770, 42, 67));
+			//horse
 		furniture.add(new Furniture("Horse", 802, 322, 64, 55));
 		//cushions
 		furniture.add(new Furniture("CushionOR", 150, 340, 47, 40));
+		furniture.add(new Furniture("CushionYR", 333, 165, 56, 48));
+		furniture.add(new Furniture("CushionRR", 543, 338, 47, 40));
+			//block
+		furniture.add(new Furniture("CushionO", 618, 241, 51, 44));
+		furniture.add(new Furniture("CushionR", 607, 228, 51, 44));
+		furniture.add(new Furniture("CushionY", 617, 216, 51, 44));
+		furniture.add(new Furniture("CushionR", 617, 202, 51, 44));
+		furniture.add(new Furniture("CushionO", 608, 186, 51, 44));
+		furniture.add(new Furniture("CushionY", 621, 173, 51, 44));
+		furniture.add(new Furniture("CushionO", 608, 160, 51, 44));
+		furniture.add(new Furniture("CushionR", 613, 143, 51, 44));
+		furniture.add(new Furniture("CushionY", 620, 129, 51, 44));
+		furniture.add(new Furniture("CushionR", 611, 113, 51, 44));
+			//bed rug
+		furniture.add(new Furniture("CushionYR", 50, 499, 56, 48));
+		furniture.add(new Furniture("CushionRR", 83, 484, 47, 40));
+		furniture.add(new Furniture("CushionY", 121, 536, 51, 44));
+		furniture.add(new Furniture("CushionR", 308, 486, 51, 44));
+		furniture.add(new Furniture("CushionOR", 289, 516, 55, 55));
+		furniture.add(new Furniture("CushionY", 231, 460, 50, 46));
+		furniture.add(new Furniture("CushionYR", 274, 528, 40, 40));
+		furniture.add(new Furniture("CushionRR", 260, 469, 43, 46));
+		furniture.add(new Furniture("CushionR", 207, 505, 43, 46));
 		
 		//barrel stuff
 		furniture.add(new Furniture("Block", 199, 832, 64, 70));
