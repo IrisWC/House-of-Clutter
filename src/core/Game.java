@@ -17,6 +17,8 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 	public static final int HEIGHT = 900;
 	
 	private ArrayList<Furniture> furniture;
+	private ArrayList<Integer> trash;
+	
 	private boolean atStart, inGame, atEnd;
 	private String currentPage;
 	private Rectangle startBtn, credBtn, infoBtn, ctrlBtn, backBtn, undoBtn, submitBtn;
@@ -27,6 +29,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 		
 		furniture = new ArrayList<Furniture>();
 		addFurniture();
+		trash = new ArrayList<Integer>();
 		
 		atStart = true; 
 		inGame = false;
@@ -109,12 +112,12 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 		//System.out.println(xmouse + ", " + ymouse);
 		
 		if(SwingUtilities.isRightMouseButton(e)) {
-		for(int i = furniture.size() - 1; i >= 0; i--) {
-			if(!furniture.get(i).checkRemoved() && furniture.get(i).contains(xmouse, ymouse)) {
-				furniture.get(i).remove();
-				break;
+			for (int i = furniture.size() - 1; i >= 0; i--) {
+				if (!furniture.get(i).checkRemoved() && furniture.get(i).contains(xmouse, ymouse)) {
+					furniture.get(i).remove();
+					break;
+				}
 			}
-		}
 		}
 		
 		//System.out.println("mouse was clicked");
