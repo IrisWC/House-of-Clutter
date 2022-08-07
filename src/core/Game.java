@@ -115,9 +115,17 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 			for (int i = furniture.size() - 1; i >= 0; i--) {
 				if (!furniture.get(i).checkRemoved() && furniture.get(i).contains(xmouse, ymouse)) {
 					furniture.get(i).remove();
+					trash.add(i);
 					break;
 				}
 			}
+		} 
+		else if (SwingUtilities.isLeftMouseButton(e)){
+			if(undoBtn.contains(xmouse, ymouse) && !trash.isEmpty()) {
+				furniture.get(trash.get(trash.size()-1)).place();
+				trash.remove(trash.size() - 1);
+			}
+			//System.out.println(trash);
 		}
 		
 		//System.out.println("mouse was clicked");
