@@ -176,6 +176,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 	
 	private void addFurniture() {
 		//end 1300 pixels
+		//500, 500
 		//rug
 		furniture.add(new Furniture("Rug", 8, 360, 393, 273));
 		furniture.add(new Furniture("Rug 3", 640, 330, 295, 227));
@@ -202,16 +203,6 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 		furniture.add(new Furniture("Stool 2", 436, 776, 63, 69));
 		furniture.add(new Furniture("Stool 2", 751, 776, 63, 69));
 		furniture.add(new Furniture("Stool 3", 1132, 326, 57, 62));
-		//barrel
-		
-		//empty container
-		furniture.add(new Furniture("Bin", 723, 57, 51, 53));
-		furniture.add(new Furniture("Trough", 1036, 316, 95, 50));
-		//books
-		furniture.add(new Furniture("Books Stool", 861, 278, 50, 95));
-		furniture.add(new Furniture("Books", 681, 315, 40, 64));
-		furniture.add(new Furniture("Books 2", 732, 305, 42, 67));
-		furniture.add(new Furniture("Books 3", 695, 290, 42, 58));
 		//wall
 		furniture.add(new Furniture("Window", 134, 41, 144, 139));
 		furniture.add(new Furniture("Picture 3", 19, 22, 60, 62));
@@ -223,6 +214,47 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 		furniture.add(new Furniture("Picture 2", 582, 11, 80, 74));
 		furniture.add(new Furniture("Picture 2", 811, 14, 35, 45));
 		furniture.add(new Furniture("Picture", 918, 20, 130, 92));
+		//barrel
+		
+		//vegetable + flower
+		
+//		furniture.add(new Furniture("Radishes", 500, 500, 95, 90));
+//		furniture.add(new Furniture("Carrots", 500, 500, 87, 87));
+//		furniture.add(new Furniture("Orange Stuff", 500, 500, 87, 67));
+		
+		furniture.add(new Furniture("Radishes", 846, 689, 95, 90));
+		furniture.add(new Furniture("Carrots", 900, 733, 87, 87));
+		furniture.add(new Furniture("Orange Stuff", 823, 761, 87, 67));
+		furniture.add(new Furniture("Radishes", 928, 761, 95, 90));
+		furniture.add(new Furniture("Radishes 2", 856, 805, 95, 64));
+		furniture.add(new Furniture("Carrots", 997, 799, 87, 87));
+		furniture.add(new Furniture("Orange Stuff", 923, 833, 87, 67));
+		furniture.add(new Furniture("Flowers", 500, 500, 110, 69));
+		
+		//empty container
+		furniture.add(new Furniture("Bin", 723, 57, 51, 53));
+		furniture.add(new Furniture("Trough", 1036, 316, 95, 50));
+		//books
+		furniture.add(new Furniture("Books Stool", 861, 278, 50, 95));
+		furniture.add(new Furniture("Books", 645, 302, 40, 64));
+		furniture.add(new Furniture("Books 2", 689, 316, 42, 67));
+		furniture.add(new Furniture("Books 3", 671, 284, 42, 58));
+		furniture.add(new Furniture("Books 2", 740, 305, 42, 67));
+		furniture.add(new Furniture("Books", 717, 273, 40, 64));
+		furniture.add(new Furniture("Books 3", 773, 335, 42, 58));
+		furniture.add(new Furniture("Books 3", 723, 344, 42, 58));
+		furniture.add(new Furniture("Books", 667, 345, 40, 64));
+		furniture.add(new Furniture("Books 2", 767, 289, 42, 67));
+		furniture.add(new Furniture("Books", 704, 308, 40, 64));
+		furniture.add(new Furniture("Books 2", 655, 311, 42, 67));
+		furniture.add(new Furniture("Books 3", 702, 374, 42, 58));
+		furniture.add(new Furniture("Books 3", 695, 245, 42, 58));
+		furniture.add(new Furniture("Books", 901, 348, 40, 64));
+		furniture.add(new Furniture("Books 2", 623, 361, 42, 67));
+		furniture.add(new Furniture("Horse", 802, 322, 64, 55));
+		//cushions
+		furniture.add(new Furniture("CushionOR", 150, 340, 47, 40));
+		
 		//near bed stuff
 		furniture.add(new Furniture("Vase 3", 18, 212, 28, 44));
 		furniture.add(new Furniture("Lamp", 50, 195, 45, 63));
@@ -239,14 +271,19 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 		furniture.add(new Furniture("Ink", 1265, 262, 23, 39));
 		furniture.add(new Furniture("Ink", 1214, 257, 23, 39));
 		furniture.add(new Furniture("Ink", 1227, 268, 23, 39));
+		//reading table stuff
+		furniture.add(new Furniture("Book", 796, 438, 58, 42));
+		furniture.add(new Furniture("Candle", 812, 388, 42, 43));
+		furniture.add(new Furniture("Ink", 769, 399, 23, 39));
+		//food table stuff
+		furniture.add(new Furniture("Vase 2", 602, 732, 45, 54));
+		furniture.add(new Furniture("Fish", 616, 795, 63, 42));
+		furniture.add(new Furniture("Cup", 531, 769, 46, 42));
+		furniture.add(new Furniture("Cup", 677, 757, 46, 42));
 		//block cushions
-		//cushions
-		furniture.add(new Furniture("CushionOR", 150, 340, 47, 40));
 		//pottery stuff
 		
 		//cabinet stuff
-		
-		//vanity stuff
 		
 		//table stuff
 		
