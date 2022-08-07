@@ -6,6 +6,8 @@ import java.awt.geom.AffineTransform;
 import java.util.ArrayList;
 
 import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
@@ -163,7 +165,22 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 					if(checkCompletion()) {
 						currentPage = "End.png";
 						inGame = false;
-					} 
+					} else {
+						JFrame result = new JFrame("Try again!");
+						result.setSize(832, 448);
+						result.setLocation(0, 0);
+						result.setLocationRelativeTo(null);
+						result.setResizable(false);
+						
+						ImageIcon pic = new ImageIcon("img/Fail.png");
+						
+						JLabel picLabel = new JLabel(pic);
+						picLabel.setSize(832, 448);
+						picLabel.setLocation(0, 0);
+						result.add(picLabel);
+						
+						result.setVisible(true);
+					}
 				}
 			}
 		}
