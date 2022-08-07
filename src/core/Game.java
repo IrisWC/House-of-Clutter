@@ -19,6 +19,8 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 	private ArrayList<Furniture> furniture;
 	private ArrayList<Integer> trash;
 	
+	private int furnitureCount;
+	
 	private boolean atStart, inGame;
 	private String currentPage;
 	private Rectangle startBtn, credBtn, infoBtn, ctrlBtn, backBtn, undoBtn, submitBtn;
@@ -29,6 +31,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 		
 		furniture = new ArrayList<Furniture>();
 		addFurniture();
+		furnitureCount = furniture.size();
 		trash = new ArrayList<Integer>();
 		
 		atStart = true; 
@@ -82,6 +85,12 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 				f.draw(g, this);
 			}
 			g.drawImage(new ImageIcon("img/Taskbar.png").getImage(), 1299, 0, 301, 900, this);
+			
+//			Font currentFont = g.getFont();
+//			Font newFont = currentFont.deriveFont(currentFont.getSize() * 3.0F);
+//			g.setFont(newFont);
+			g.setFont(new Font("TimesRoman", Font.PLAIN, 30)); 
+			g.drawString("" + furnitureCount, 1492, 725);
 	    }
 	    
 	    g2.setTransform(at);
@@ -118,6 +127,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 				if (!furniture.get(i).checkRemoved() && furniture.get(i).contains(xmouse, ymouse)) {
 					furniture.get(i).remove();
 					trash.add(i);
+					furnitureCount--;
 					break;
 				}
 			}
@@ -146,6 +156,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 				if (undoBtn.contains(xmouse, ymouse) && !trash.isEmpty()) {
 					furniture.get(trash.get(trash.size() - 1)).place();
 					trash.remove(trash.size() - 1);
+					furnitureCount++;
 				} 
 				else if (submitBtn.contains(xmouse, ymouse)) {
 					if(checkCompletion()) {
@@ -412,7 +423,8 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 	}
 	
 	private boolean checkCompletion() {
-		return false;
+		
+		return true;
 	}
 
 	@Override

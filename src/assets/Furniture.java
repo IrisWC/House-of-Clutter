@@ -36,7 +36,7 @@ public class Furniture {
 	
 	public void remove() {
 		removed = true;
-		System.out.println(x + ", " + y);
+		//System.out.println(x + ", " + y);
 	}
 	
 	public void moveWith(int xcord, int ycord) {
