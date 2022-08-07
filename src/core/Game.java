@@ -19,7 +19,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 	private ArrayList<Furniture> furniture;
 	private ArrayList<Integer> trash;
 	
-	private boolean atStart, inGame, atEnd;
+	private boolean atStart, inGame;
 	private String currentPage;
 	private Rectangle startBtn, credBtn, infoBtn, ctrlBtn, backBtn, undoBtn, submitBtn;
 	private Furniture holding;
@@ -33,7 +33,6 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 		
 		atStart = false; 
 		inGame = true;
-		atEnd = false;
 		
 		currentPage = "backgroundTB.png"; //FIX this for start of game later
 		
@@ -149,7 +148,10 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 					trash.remove(trash.size() - 1);
 				} 
 				else if (submitBtn.contains(xmouse, ymouse)) {
-
+					if(checkCompletion()) {
+						currentPage = "End.png";
+						inGame = false;
+					} 
 				}
 			}
 		}
