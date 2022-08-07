@@ -425,8 +425,8 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 	
 	private boolean checkCompletion() {
 		int counter = 0;
-//		if(furnitureCount >= 50)
-//			return false;
+		if(furnitureCount >= 50)
+			return false;
 		
 		//Checks for at least 3 chairs/stools
 		for(Furniture f : furniture) {
@@ -437,7 +437,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 					counter++;
 			}
 		}
-		System.out.println("Chairs/stools: " + counter);
+		//System.out.println("Chairs/stools: " + counter);
 		if(counter < 3)
 			return false;
 		counter = 0;
@@ -450,7 +450,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 					counter++;
 			}
 		}
-		System.out.println("Beds: " + counter);
+		//System.out.println("Beds: " + counter);
 		if(counter < 1)
 			return false;
 		counter = 0;
@@ -464,7 +464,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 					counter++;
 			}
 		}
-		System.out.println("Rugs: " + counter);
+		//System.out.println("Rugs: " + counter);
 		if(counter < 2)
 			return false;
 		counter = 0;
@@ -477,7 +477,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 					counter++;
 			}
 		}
-		System.out.println("Orange: " + counter);
+		//System.out.println("Orange: " + counter);
 		if(counter < 5)
 			return false;
 		counter = 0;
@@ -491,7 +491,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 					counter++;
 			}
 		}
-		System.out.println("Cabinets: " + counter);
+		//System.out.println("Cabinets: " + counter);
 		if(counter < 5)
 			return false;
 		counter = 0;
@@ -504,7 +504,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 					counter++;
 			}
 		}
-		System.out.println("Bookshelves: " + counter);
+		//System.out.println("Bookshelves: " + counter);
 		if(counter < 1)
 			return false;
 		counter = 0;
@@ -517,7 +517,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 					counter++;
 			}
 		}
-		System.out.println("Potter shelves: " + counter);
+		//System.out.println("Potter shelves: " + counter);
 		if(counter < 1)
 			return false;
 		counter = 0;
@@ -532,7 +532,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 					counter++;
 			}
 		}
-		System.out.println("Plants: " + counter);
+		//System.out.println("Plants: " + counter);
 		if(counter < 4)
 			return false;
 		counter = 0;
@@ -546,7 +546,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 					counter++;
 			}
 		}
-		System.out.println("Pictures: " + counter);
+		//System.out.println("Pictures: " + counter);
 		if(counter < 3)
 			return false;
 		counter = 0;
@@ -559,7 +559,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 					counter++;
 			}
 		}
-		System.out.println("Clocks: " + counter);
+		//System.out.println("Clocks: " + counter);
 		if(counter < 1)
 			return false;
 		counter = 0;
@@ -572,7 +572,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 					counter++;
 			}
 		}
-		System.out.println("Barrels: " + counter);
+		//System.out.println("Barrels: " + counter);
 		if(counter < 2)
 			return false;
 		counter = 0;
@@ -585,7 +585,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 					counter++;
 			}
 		}
-		System.out.println("Lamps: " + counter);
+		//System.out.println("Lamps: " + counter);
 		if(counter < 1)
 			return false;
 		counter = 0;
@@ -598,7 +598,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 					counter++;
 			}
 		}
-		System.out.println("Tables: " + counter);
+		//System.out.println("Tables: " + counter);
 		if(counter < 3)
 			return false;
 		counter = 0;
@@ -617,7 +617,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 					counter++;
 			}
 		}
-		System.out.println("Others: " + counter);
+		//System.out.println("Others: " + counter);
 		if(counter < 10)
 			return false;
 		counter = 0;
