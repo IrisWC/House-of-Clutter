@@ -90,6 +90,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 //			Font newFont = currentFont.deriveFont(currentFont.getSize() * 3.0F);
 //			g.setFont(newFont);
 			g.setFont(new Font("TimesRoman", Font.PLAIN, 30)); 
+			g.setColor(new Color(88, 62, 56));
 			g.drawString("" + furnitureCount, 1492, 725);
 	    }
 	    
@@ -147,7 +148,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 					currentPage = "Controls.png";
 				}
 				else if(startBtn.contains(xmouse, ymouse)) {
-					currentPage = "background.png";
+					currentPage = "Background.png";
 					atStart = false;
 					inGame = true;
 				}
@@ -423,6 +424,172 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 	}
 	
 	private boolean checkCompletion() {
+		int counter = 0;
+//		if(furnitureCount >= 50)
+//			return false;
+		
+		//Checks for at least 3 chairs/stools
+		for(Furniture f : furniture) {
+			String name = f.getName();
+			if(name.equals("Chair") || name.equals("Books Stool") || name.equals("Stool") || name.equals("Stool 2") || name.equals("Stool 3"))
+				counter++;
+		}
+		System.out.println("Chairs/stools: " + counter);
+		if(counter < 3)
+			return false;
+		counter = 0;
+		
+		//Checks for a bed
+		for(Furniture f : furniture) {
+			String name = f.getName();
+			if(name.equals("Bed") || name.equals("Bed 2"))
+				counter++;
+		}
+		System.out.println("Beds: " + counter);
+		if(counter < 1)
+			return false;
+		counter = 0;
+		
+		//Checks for 2 rugs
+		for(Furniture f : furniture) {
+			String name = f.getName();
+			if(name.equals("Rug") || name.equals("Rug 2") || name.equals("Rug 3") || 
+					name.equals("Rug 4") || name.equals("Rug 5") || name.equals("Rug 6"))
+				counter++;
+		}
+		System.out.println("Rugs: " + counter);
+		if(counter < 2)
+			return false;
+		counter = 0;
+		
+		//Checks for 5 oranged colored cushions or rugs
+		for(Furniture f : furniture) {
+			String name = f.getName();
+			if(name.equals("CushionO") || name.equals("CushionOR") || name.equals("Rug") || name.equals("Rug 6"))
+				counter++;
+		}
+		System.out.println("Orange: " + counter);
+		if(counter < 5)
+			return false;
+		counter = 0;
+		
+		//Checks for 5 cabinets
+		for(Furniture f : furniture) {
+			String name = f.getName();
+			if(name.equals("Dresser") || name.equals("Dresser 2") || name.equals("Dresser 3") || 
+					name.equals("Bedside") || name.equals("Cabinet") || name.equals("Vanity"))
+				counter++;
+		}
+		System.out.println("Cabinets: " + counter);
+		if(counter < 5)
+			return false;
+		counter = 0;
+		
+		//Checks for bookshelf
+		for(Furniture f : furniture) {
+			String name = f.getName();
+			if(name.equals("Bookshelf"))
+				counter++;
+		}
+		System.out.println("Bookshelves: " + counter);
+		if(counter < 1)
+			return false;
+		counter = 0;
+		
+		//Checks for potter shelf
+		for(Furniture f : furniture) {
+			String name = f.getName();
+			if(name.equals("Pottery Shelf"))
+				counter++;
+		}
+		System.out.println("Potter shelves: " + counter);
+		if(counter < 1)
+			return false;
+		counter = 0;
+		
+		//Checks for 4 plants
+		for(Furniture f : furniture) {
+			String name = f.getName();
+			if(name.equals("Carrots") || name.equals("Flowers") || name.equals("Orange Stuff") || 
+					name.equals("Radishes") || name.equals("Radishes 2") || name.equals("Vase 2") || name.equals("Vase 3"))
+				counter++;
+		}
+		System.out.println("Plants: " + counter);
+		if(counter < 4)
+			return false;
+		counter = 0;
+		
+		//Checks for 3 pictures
+		for(Furniture f : furniture) {
+			String name = f.getName();
+			if(name.equals("Picture") || name.equals("Picture 2") || name.equals("Picture 3") || 
+					name.equals("Picture 4") || name.equals("Picture 5"))
+				counter++;
+		}
+		System.out.println("Pictures: " + counter);
+		if(counter < 3)
+			return false;
+		counter = 0;
+		
+		//Checks for clock
+		for(Furniture f : furniture) {
+			String name = f.getName();
+			if(name.equals("Clock"))
+				counter++;
+		}
+		System.out.println("Clocks: " + counter);
+		if(counter < 1)
+			return false;
+		counter = 0;
+		
+		//Checks for 2 barrels
+		for(Furniture f : furniture) {
+			String name = f.getName();
+			if(name.equals("Barrel"))
+				counter++;
+		}
+		System.out.println("Barrels: " + counter);
+		if(counter < 2)
+			return false;
+		counter = 0;
+		
+		//Checks for lamp
+		for(Furniture f : furniture) {
+			String name = f.getName();
+			if(name.equals("Lamp"))
+				counter++;
+		}
+		System.out.println("Lamps: " + counter);
+		if(counter < 1)
+			return false;
+		counter = 0;
+		
+		//Checks for 3 tables
+		for(Furniture f : furniture) {
+			String name = f.getName();
+			if(name.equals("Table") || name.equals("Table 2") || name.equals("Table 3") || name.equals("Table 4"))
+				counter++;
+		}
+		System.out.println("Tables: " + counter);
+		if(counter < 3)
+			return false;
+		counter = 0;
+		
+		//Checks for 10 other things
+		for(Furniture f : furniture) {
+			String name = f.getName();
+			if(name.equals("Ball") || name.equals("Bin") || name.equals("Block") || name.equals("Blue Thing") ||
+					name.equals("Book") || name.equals("Books 2") || name.equals("Books 3") || name.equals("Books") ||
+					name.equals("Candle") || name.equals("Chest") || name.equals("Cup") || name.equals("CushionR") ||
+					name.equals("CushionRR") || name.equals("CushionY") || name.equals("CushionYR") || name.equals("Fish") ||
+					name.equals("Horse") || name.equals("HorseR") || name.equals("Ink") || name.equals("Plates") || 
+					name.equals("Teacup") || name.equals("Trough") || name.equals("Window") || name.equals("Vase"))
+				counter++;
+		}
+		System.out.println("Others: " + counter);
+		if(counter < 10)
+			return false;
+		counter = 0;
 		
 		return true;
 	}
