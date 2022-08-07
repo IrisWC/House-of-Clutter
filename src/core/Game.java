@@ -78,8 +78,11 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 	    
 	    g.drawImage(new ImageIcon("img/" + currentPage).getImage(), 0, 0, 1600, 900, this);
 	    
-	    for(Furniture f : furniture) {
-	    	f.draw(g, this);
+	    if(inGame) {
+			for (Furniture f : furniture) {
+				f.draw(g, this);
+			}
+			//g.drawImage(new ImageIcon("img/").getImage(), 1299, 0, 301, 900, this); //TODO
 	    }
 	    
 	    g2.setTransform(at);
