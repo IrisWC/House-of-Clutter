@@ -19,7 +19,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 	private ArrayList<Furniture> furniture;
 	private boolean atStart, inGame, atEnd;
 	private String currentPage;
-	private Rectangle startBtn, despBtn, infoBtn, controlBtn, taskBtn, trashBtn, finishBtn;
+	private Rectangle startBtn, credBtn, infoBtn, controlBtn, backBtn, undoBtn, submitBtn;
 	private Furniture holding;
 	
 	public Game() {
