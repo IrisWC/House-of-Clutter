@@ -308,17 +308,14 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 		furniture.add(new Furniture("Book", 796, 438, 58, 42));
 		furniture.add(new Furniture("Candle", 812, 388, 42, 43));
 		furniture.add(new Furniture("Ink", 769, 399, 23, 39));
+		//pottery stuff
+		furniture.add(new Furniture("Vase", 500, 500, 50, 55));
+		furniture.add(new Furniture("Plates", 500, 500, 40, 40));
 		//food table stuff
 		furniture.add(new Furniture("Vase 2", 602, 732, 45, 54));
 		furniture.add(new Furniture("Fish", 616, 795, 63, 42));
 		furniture.add(new Furniture("Cup", 531, 769, 46, 42));
 		furniture.add(new Furniture("Cup", 677, 757, 46, 42));
-		//block cushions
-		//pottery stuff
-		
-		//cabinet stuff
-		
-		//table stuff
 		
 	}
 	
