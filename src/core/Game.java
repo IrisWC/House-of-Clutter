@@ -217,11 +217,11 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 		//barrel
 		
 		//vegetable + flower
-		
-//		furniture.add(new Furniture("Radishes", 500, 500, 95, 90));
-//		furniture.add(new Furniture("Carrots", 500, 500, 87, 87));
-//		furniture.add(new Furniture("Orange Stuff", 500, 500, 87, 67));
-		
+		furniture.add(new Furniture("Flowers", 762, 683, 110, 69));
+		furniture.add(new Furniture("Radishes 2", 1119, 743, 95, 64));
+		furniture.add(new Furniture("Orange Stuff", 939, 696, 87, 67));
+		furniture.add(new Furniture("Carrots", 990, 726, 87, 87));
+		furniture.add(new Furniture("Radishes", 1057, 768, 95, 90));
 		furniture.add(new Furniture("Radishes", 846, 689, 95, 90));
 		furniture.add(new Furniture("Carrots", 900, 733, 87, 87));
 		furniture.add(new Furniture("Orange Stuff", 823, 761, 87, 67));
@@ -229,7 +229,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 		furniture.add(new Furniture("Radishes 2", 856, 805, 95, 64));
 		furniture.add(new Furniture("Carrots", 997, 799, 87, 87));
 		furniture.add(new Furniture("Orange Stuff", 923, 833, 87, 67));
-		furniture.add(new Furniture("Flowers", 500, 500, 110, 69));
+		furniture.add(new Furniture("Flowers", 1066, 830, 110, 69));
 		
 		//empty container
 		furniture.add(new Furniture("Bin", 723, 57, 51, 53));
