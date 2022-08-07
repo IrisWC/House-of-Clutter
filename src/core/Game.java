@@ -363,7 +363,6 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 		furniture.add(new Furniture("CushionOR", 1196, 653, 40, 44));
 		furniture.add(new Furniture("CushionO", 977, 612, 58, 48));
 		furniture.add(new Furniture("CushionR", 1137, 658, 51, 44));
-		
 		//barrel stuff
 		furniture.add(new Furniture("Block", 199, 832, 64, 70));
 		furniture.add(new Furniture("Bin", 134, 808, 63, 67));
