@@ -31,8 +31,8 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 		addFurniture();
 		trash = new ArrayList<Integer>();
 		
-		atStart = true; 
-		inGame = false;
+		atStart = false; 
+		inGame = true;
 		atEnd = false;
 		
 		currentPage = "backgroundTB.png"; //FIX this for start of game later
@@ -111,7 +111,7 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 		
 		//System.out.println(xmouse + ", " + ymouse);
 		
-		if(SwingUtilities.isRightMouseButton(e)) {
+		if(SwingUtilities.isRightMouseButton(e) && inGame) {
 			for (int i = furniture.size() - 1; i >= 0; i--) {
 				if (!furniture.get(i).checkRemoved() && furniture.get(i).contains(xmouse, ymouse)) {
 					furniture.get(i).remove();
@@ -121,11 +121,34 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 			}
 		} 
 		else if (SwingUtilities.isLeftMouseButton(e)){
-			if(undoBtn.contains(xmouse, ymouse) && !trash.isEmpty()) {
-				furniture.get(trash.get(trash.size()-1)).place();
-				trash.remove(trash.size() - 1);
+			if(atStart) {
+				if(backBtn.contains(xmouse, ymouse)) {
+					currentPage = "Menu.png";
+				}
+				else if(infoBtn.contains(xmouse, ymouse)) {
+					currentPage = "Info.png";
+				}
+				else if(credBtn.contains(xmouse, ymouse)) {
+					currentPage = "Credits.png";
+				}
+				else if(ctrlBtn.contains(xmouse, ymouse)) {
+					currentPage = "Controls.png";
+				}
+				else if(startBtn.contains(xmouse, ymouse)) {
+					currentPage = "backgroundTB.png";
+					atStart = false;
+					inGame = true;
+				}
 			}
-			//System.out.println(trash);
+			else if(inGame) {
+				if (undoBtn.contains(xmouse, ymouse) && !trash.isEmpty()) {
+					furniture.get(trash.get(trash.size() - 1)).place();
+					trash.remove(trash.size() - 1);
+				} 
+				else if (submitBtn.contains(xmouse, ymouse)) {
+
+				}
+			}
 		}
 		
 		//System.out.println("mouse was clicked");
