@@ -258,6 +258,10 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 		furniture.add(new Furniture("Picture 2", 582, 11, 80, 74));
 		furniture.add(new Furniture("Picture 2", 811, 14, 35, 45));
 		furniture.add(new Furniture("Picture", 918, 20, 130, 92));
+		furniture.add(new Furniture("Picture 4", 1098, 91, 59, 81));
+		furniture.add(new Furniture("Picture 3", 1029, 145, 45, 45));
+		furniture.add(new Furniture("Picture 2", 811, 155, 50, 50));
+		
 		//barrel
 		furniture.add(new Furniture("Barrel", 85, 671, 78, 89));
 		furniture.add(new Furniture("Barrel", 13, 705, 78, 89));
@@ -343,7 +347,6 @@ public class Game extends JPanel implements MouseListener, MouseMotionListener {
 		furniture.add(new Furniture("Candle", 812, 388, 42, 43));
 		furniture.add(new Furniture("Ink", 769, 399, 23, 39));
 		//pottery stuff
-//		furniture.add(new Furniture("Plates", 500, 500, 40, 40));
 		furniture.add(new Furniture("Vase", 955, 310, 50, 55));
 		furniture.add(new Furniture("Plates", 921, 334, 40, 40));
 		furniture.add(new Furniture("Plates", 989, 350, 30, 30));
